@@ -1,0 +1,51 @@
+.success-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.checkmark-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #4caf50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  position: relative;
+  animation: scale 0.5s ease-in-out;
+}
+
+.checkmark {
+  width: 50px;
+  height: 25px;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  animation: draw 0.5s ease-in-out 0.5s forwards;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes draw {
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  100% {
+    width: 50px;
+    height: 25px;
+  }
+}
